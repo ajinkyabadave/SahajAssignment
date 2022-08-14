@@ -7,7 +7,15 @@ public class Deposits {
     LocalDate transactionDate;
     Double depositAmount;
 
-    public Deposits( Long accountNumber, LocalDate transactionDate, Double depositAmount) {
+    public Long getAccountNumber() {
+        return accountNumber;
+    }
+
+    public Double getDepositAmount() {
+        return depositAmount;
+    }
+
+    public Deposits(Long accountNumber, LocalDate transactionDate, Double depositAmount) {
         this.accountNumber = accountNumber;
         this.transactionDate = transactionDate;
         this.depositAmount = depositAmount;
